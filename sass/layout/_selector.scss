@@ -29,10 +29,11 @@
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: var(--accent-color);
+  }
 }
 
-.button-selector:hover,
-.button-selector:focus {
-  color: #ffffff;
-  background-color: var(--accent-color);
-}

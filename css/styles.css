@@ -100,13 +100,13 @@ img {
   color: var(--accent-color);
 }
 
-.site-nav__link.site-nav__link--is-current {
+.site-nav__link.is-current {
   color: var(--accent-color);
 
   position: relative;
 }
 
-.site-nav__link.site-nav__link--is-current::after {
+.site-nav__link.is-current::after {
   content: '';
 
   position: absolute;
@@ -136,10 +136,8 @@ img {
 
 .site-nav__link:hover,
 .site-nav__link:focus,
-.contact-list__mail:hover,
-.contact-list__mail:focus,
-.contact-list__num:hover,
-.contact-list__num:focus {
+.contact-list__link:hover,
+.contact-list__link:focus {
   color: var(--accent-color);
 }
 
@@ -158,14 +156,12 @@ img {
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-list__mail:hover .contact-list__icon,
-.contact-list__mail:focus .contact-list__icon,
-.contact-list__num:hover .contact-list__icon,
-.contact-list__num:focus .contact-list__icon {
+
+.contact-list__link:hover .contact-list__icon,
+.contact-list__link:focus .contact-list__icon {
   fill: var(--accent-color);
 }
-.contact-list__mail,
-.contact-list__num {
+.contact-list__link {
   display: flex;
   align-items: center;
 
